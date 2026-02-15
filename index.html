@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Beauty | Nowoczesny Salon Kosmetyczny</title>
+    <meta name="description"
+        content="Aurora Beauty - nowoczesny salon kosmetyczny oferujący zabiegi na twarz, ciało i paznokcie. Zrelaksuj się w luksusowym wnętrzu.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-details">
+                <span><i class="fas fa-phone"></i> +48 123 456 789</span>
+                <span><i class="fas fa-envelope"></i> kontakt@aurorabeauty.pl</span>
+                <span><i class="fas fa-map-marker-alt"></i> ul. Piękna 12/4, Warszawa</span>
+            </div>
+            <div class="social-icons-top">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Aurora Beauty</a>
+            <ul class="nav-links">
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#pricing">Cennik</a></li>
+                <li><a href="#reviews">Opinie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="https://booksy.com" target="_blank" class="btn-primary-sm">Umów wizytę</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <span class="close-menu">&times;</span>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#pricing">Cennik</a></li>
+            <li><a href="#reviews">Opinie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="https://booksy.com" target="_blank" class="btn-primary">Umów wizytę</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-section">
+            <h1 class="hero-title">Odkryj Swoje Prawdziwe Piękno</h1>
+            <p class="hero-subtitle">Luksusowa pielęgnacja w sercu miasta. Zrelaksuj się i zadbaj o siebie.</p>
+            <a href="https://booksy.com" target="_blank" class="btn-primary">Umów wizytę</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper fade-in-section">
+                <!-- Placeholder for About Image -->
+                <div class="placeholder-img about-img"></div>
+            </div>
+            <div class="about-text fade-in-section">
+                <h2 class="section-title">O Nas</h2>
+                <p class="section-subtitle">Pasja i Profesjonalizm</p>
+                <p>W Aurora Beauty wierzymy, że piękno to coś więcej niż wygląd – to uczucie. Nasz zespół ekspertów z
+                    pasją podchodzi do każdej klientki, oferując indywidualnie dobrane zabiegi w atmosferze pełnego
+                    relaksu.</p>
+                <p>Stworzyliśmy miejsce, w którym czas zwalnia, a Ty możesz skupić się wyłącznie na sobie. Korzystamy
+                    tylko z najwyższej jakości, sprawdzonych kosmetyków.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding bg-light" id="pricing">
+        <div class="container fade-in-section">
+            <h2 class="section-title text-center">Nasze Usługi</h2>
+            <p class="section-subtitle text-center">Sprawdź naszą ofertę</p>
+
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-category="face">Twarz</button>
+                <button class="pricing-tab" data-category="body">Ciało</button>
+                <button class="pricing-tab" data-category="nails">Paznokcie</button>
+            </div>
+
+            <div class="pricing-content active" id="face">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Oczyszczanie wodorowe</span>
+                        <span class="pricing-price">250 PLN</span>
+                    </div>
+                    <span class="pricing-time">60 min</span>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Masaż Kobido</span>
+                        <span class="pricing-price">200 PLN</span>
+                    </div>
+                    <span class="pricing-time">75 min</span>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Peeling kawitacyjny</span>
+                        <span class="pricing-price">180 PLN</span>
+                    </div>
+                    <span class="pricing-time">45 min</span>
+                </div>
+            </div>
+
+            <div class="pricing-content" id="body">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Masaż relaksacyjny</span>
+                        <span class="pricing-price">180 PLN</span>
+                    </div>
+                    <span class="pricing-time">60 min</span>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Endermologia</span>
+                        <span class="pricing-price">220 PLN</span>
+                    </div>
+                    <span class="pricing-time">45 min</span>
+                </div>
+            </div>
+
+            <div class="pricing-content" id="nails">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Manicure hybrydowy</span>
+                        <span class="pricing-price">120 PLN</span>
+                    </div>
+                    <span class="pricing-time">60 min</span>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Pedicure SPA</span>
+                        <span class="pricing-price">160 PLN</span>
+                    </div>
+                    <span class="pricing-time">75 min</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container fade-in-section">
+            <h2 class="section-title text-center">Opinie Klientek</h2>
+            <div class="reviews-grid">
+                <div class="review-card fade-in-section">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Najlepszy salon w mieście! Obsługa jest przemiła, a zabiegi na najwyższym
+                        poziomie. Polecam każdemu!"</p>
+                    <span class="review-author">- Anna K.</span>
+                </div>
+                <div class="review-card fade-in-section" style="transition-delay: 0.1s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Cudowne miejsce na relaks. Wyszłam stąd jak nowo narodzona. Na pewno wrócę!"
+                    </p>
+                    <span class="review-author">- Katarzyna M.</span>
+                </div>
+                <div class="review-card fade-in-section" style="transition-delay: 0.2s;">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Profesjonalne podejście i piękny wystrój. Manicure trzyma się idealnie."</p>
+                    <span class="review-author">- Ewa P.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer bg-dark section-padding" id="contact">
+        <div class="container footer-grid fade-in-section">
+            <div class="footer-info">
+                <h3 class="footer-logo">Aurora Beauty</h3>
+                <p>ul. Piękna 12/4<br>00-001 Warszawa</p>
+                <p>Tel: +48 123 456 789<br>Email: kontakt@aurorabeauty.pl</p>
+                <div class="social-icons">
+                    <!-- Using text placeholders since fontawesome might not load perfectly without a kit or proper setup sometimes, 
+                          but kept the classes ready. Or simple SVGs. Let's use simple text links for robustness first. -->
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h4>Godziny Otwarcia</h4>
+                <ul class="hours-list">
+                    <li><span>Pon - Pt:</span> 09:00 - 20:00</li>
+                    <li><span>Sobota:</span> 10:00 - 16:00</li>
+                    <li><span>Niedziela:</span> Zamknięte</li>
+                </ul>
+            </div>
+            <div class="footer-map">
+                <!-- Google Maps Placeholder -->
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.433475654668!2d21.01222831579736!3d52.235641979761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa%2C%20Poland!5e0!3m2!1sen!2spl!4v1625667000000!5m2!1sen!2spl"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aurora Beauty. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
