@@ -649,6 +649,11 @@ img {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+
+
     .nav-links {
         display: none;
     }
