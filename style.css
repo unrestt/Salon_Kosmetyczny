@@ -343,7 +343,7 @@ img {
     color: var(--text-color);
     margin-bottom: 0px;
     position: relative;
-    padding: 0 20px;
+    padding: 0 20px 15vh 20px;
     color: #fff;
 }
 
