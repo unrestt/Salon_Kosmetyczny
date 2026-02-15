@@ -251,7 +251,10 @@ img {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #e0e0e0 0%, #fdfbf7 100%);
+    background-image: url("hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,6 +264,7 @@ img {
     margin-bottom: 0px;
     position: relative;
     padding: 0 20px;
+    color: #fff;
 }
 
 .hero-overlay {
@@ -269,7 +273,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -282,13 +286,14 @@ img {
     font-size: 3.5rem;
     margin-bottom: 20px;
     line-height: 1.2;
-    /* Removed dark text-shadow for cleaner look on light bg */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 40px;
     font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* About Section */
