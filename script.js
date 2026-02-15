@@ -55,4 +55,34 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeSections.forEach(section => {
         observer.observe(section);
     });
+
+    // 5. Cookie Banner
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('acceptCookies');
+
+    // Check if user already accepted (simulated with localStorage)
+    if (!localStorage.getItem('cookiesAccepted')) {
+        // Show banner (it is visible by default in HTML, so we just let it be)
+    } else {
+        cookieBanner.style.display = 'none';
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        cookieBanner.style.opacity = '0';
+        cookieBanner.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            cookieBanner.style.display = 'none';
+        }, 500);
+        localStorage.setItem('cookiesAccepted', 'true');
+    });
+
+    // Reset Cookies (for testing)
+    const resetBtn = document.getElementById('resetCookies');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            localStorage.removeItem('cookiesAccepted');
+            location.reload();
+        });
+    }
 });

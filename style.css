@@ -111,10 +111,15 @@ img {
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .btn-primary-sm:hover {
     background-color: #8A9A75;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Top Bar */
@@ -147,6 +152,58 @@ img {
     margin-left: 15px;
     font-weight: 600;
     font-size: 0.9rem !important;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    border-left: 5px solid var(--primary-color);
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideUp 0.5s ease-out forwards;
+    transition: all 0.5s ease;
+}
+
+.cookie-banner p {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-banner p {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
 
 .social-icons-top i {
@@ -189,13 +246,31 @@ img {
     gap: 30px;
 }
 
-.nav-links a {
+/* Nav Link Animation */
+.nav-links a:not(.btn-primary-sm) {
     font-weight: 500;
     font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-.nav-links a:hover {
+.nav-links a:not(.btn-primary-sm)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:not(.btn-primary-sm):hover {
     color: var(--primary-color);
+}
+
+.nav-links a:not(.btn-primary-sm):hover::after {
+    width: 100%;
 }
 
 .hamburger {
@@ -309,11 +384,17 @@ img {
     align-items: center;
 }
 
+/* Image Hover Zoom */
 .about-image-wrapper {
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    transition: transform 0.5s ease;
+}
+
+.about-image-wrapper:hover .about-img {
+    transform: scale(1.05);
 }
 
 .placeholder-img {
@@ -329,6 +410,7 @@ img {
 .about-img {
     height: 500px;
     background: linear-gradient(135deg, #e6d0c9 0%, #fdfbf7 100%);
+    transition: transform 0.5s ease;
 }
 
 .section-title {
@@ -387,6 +469,7 @@ img {
     display: block;
 }
 
+/* Pricing Item Hover */
 .pricing-item {
     background: #fff;
     padding: 20px;
@@ -397,6 +480,14 @@ img {
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
     border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.pricing-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    background-color: #fafafa;
 }
 
 .pricing-header {
